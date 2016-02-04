@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html ng-app="app">
+    <head>
+    	<title>Hello</title>
+        <!--GOOGLE FONTS-->
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+        <!--//////////-->
+        <!--FONT AWESOME-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <!--//////////-->
+        <link href="/css/style.css" rel="stylesheet">
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.js" type="text/javascript"></script>
+    </head>
+    <body ng-controller="mainController">
+
+    	<div class="header">
+    	<h1 class="user-name">Welcome, {{user.username}}!</h1>
+        </div>
+        
+        
+        
+
+        <div class="loggedInUsers">
+            <div class="text-center"><strong>Users on-line</strong></div>
+            <div class="usersIn" ng-show="status" ng-repeat="(user, status) in loggedInUsers"><i class="fa fa-circle"></i> {{user}}</div>
+        </div>
+        
+        <div class="chatHistory">
+            <div class="textcenter"><strong>Chat Log</strong></div>
+            <div class="usermessage" ng-repeat="message in messageHistory"><div class="sender">{{message.sender}}</div>  {{message.content}}</div>
+        </div>
+
+        <input ng-keydown="sendMessage($event)" ng-model="chatMessage" class="chatBox" placeholder="Type...">
+
+        <footer>
+            <p class="builtBy">Website by<br>Stephen D. Baldwin</p>
+            <div class="links">
+            <a class="github" href="https://www.github.com/sbaldwin970">Github</a>
+            <a class="linkdin" href="https://www.linkedin.com/in/stephen-baldwin-0176b6bb">Linkdin</a>
+            </div>
+
+        </footer>
+        
+        <script type="text/javascript", src="https://cdn.socket.io/socket.io-1.1.0.js"></script>
+    	<script src="/js/chat.js" type="text/javascript"></script>
+    </body>
+</html>

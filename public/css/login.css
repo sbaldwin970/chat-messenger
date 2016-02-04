@@ -1,0 +1,32 @@
+body {
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+}
+.header {
+	margin: 0;
+	height: 100px;
+	width: 100vw;
+	background-color: #f2f2f2;
+}
+.title {
+	margin: 0;
+	text-align: center;
+	font-size: 70px;
+}
+i {
+	color: #1aa3ff;
+}
+.con-container {
+	width: 100vw;
+	text-align: center;
+}
+.container {
+	margin: 40px;
+	display: inline-block;
+}
+.register, .sign-in {
+	color: #1aa3ff;
+}
+.username, .password {
+	height: 20px;
+}

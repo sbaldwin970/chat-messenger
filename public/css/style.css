@@ -1,0 +1,98 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    margin-left: 250px;
+    margin-right: 250px;
+    background-color: white;
+}
+
+.loggedInUsers {
+    border: 1px solid gray;
+    min-height: 20px;
+    width: 15vw;
+    float: right;
+    padding: 5px;
+    margin-left: 5px;
+    background-color: black;
+    /*border-top-left-radius: 15px;
+    border-top-right-radius: 15px;*/
+}
+
+.chatHistory {
+    border: 1px solid #1aa3ff;
+    border-top: none;
+    min-height: 700px;
+    width: 51vw;
+    overflow: hidden;
+    background-color: #f2f2f2;
+    /*border-top-left-radius: 15px;
+    border-top-right-radius: 15px;*/
+
+}
+
+.chatBox {
+    height: 25px;
+    width: 51vw;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.text-center {
+    font-size: 20px;
+    text-align: center;
+    color: #1aa3ff;
+    background-color: #333333;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-bottom: 10px;
+
+}
+.textcenter {
+    font-size: 20px;
+    text-align: center;
+    color: #1aa3ff;
+    background-color: #333333;
+}
+.user-name {
+    margin: 0;
+    margin-left: 10px;
+    color: white;
+    padding-top: 10px;
+}
+.header {
+    height: 60px;
+    background-color: #1aa3ff;
+}
+
+.usersIn {
+    color: #00ff00;
+    font-size: 14px;
+}
+.usermessage {
+    margin-left: 10px;
+    margin-top: 5px;
+    font-size: 16px;
+}
+footer {
+    margin-top: 10px;
+    height: 115px;
+    background-color: #1aa3ff;
+    text-align: center; 
+}
+.builtBy {
+    font-size: 10px;
+    padding-top: 5px;
+    color: white;
+}
+.links {
+    display: inline-block;
+    text-align: center;
+}
+.github, .linkdin {
+    font-size: 10px;
+    color: white;
+    padding: 10px;
+}
+.sender {
+    color: #1aa3ff;
+}
